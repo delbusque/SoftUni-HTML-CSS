@@ -1,0 +1,94 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #9790f2;
+}
+
+.card {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 900px;
+  margin: 200px auto;
+}
+
+.card__left,
+.card__right {
+  display: inline-block;
+  vertical-align: top;
+  height: 170px;
+}
+
+.card__left {
+  background-color: midnightblue;
+  color: aliceblue;
+  padding: 20px 45px 20px 25px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.card__right {
+  background-color: aliceblue;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 20px 25px;
+  width: 50%;
+}
+
+.card__left-head {
+  margin: 0;
+  margin-bottom: 11px;
+  color: rgba(211, 211, 211, 0.637);
+}
+
+.card__right-head {
+  margin: 0;
+  margin-bottom: 5px;
+  color: rgba(143, 143, 143, 0.82);
+}
+
+.card__left-body1 {
+  margin: 0;
+  line-height: 22px;
+}
+
+.card__left-body2 {
+  margin: 0;
+}
+
+.card__right-body {
+  margin: 0;
+}
+
+.card__left-foot {
+  margin: 0;
+  margin-top: 25px;
+  font-size: smaller;
+}
+
+.card__right-button {
+  margin: 0;
+  margin-top: 25px;
+  position: relative;
+  left: 70%;
+  top: 5%;
+  padding: 10px 30px;
+  border-radius: 20px;
+  border: 0;
+  background-color: midnightblue;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(211, 211, 211, 0.637);
+}
