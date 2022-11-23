@@ -33,14 +33,14 @@
 
 .page-layout header {
   /* grid-area: nav; */
-  grid-column: 1 / 4;
+  grid-column: 2 / 3;
   grid-row: 1/2;
 }
 
 .page-layout main {
   background-color: cyan;
   /* grid-area: content; */
-  grid-column: 2/4;
+  grid-column: 3/4;
   grid-row: 2/3;
 }
 
