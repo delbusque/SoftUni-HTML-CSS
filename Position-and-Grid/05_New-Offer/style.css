@@ -1,0 +1,22 @@
+main {
+  width: 700px;
+  height: 500px;
+  background-color: rgba(245, 245, 220);
+  margin: 0 auto;
+  position: relative;
+}
+
+img:first-child {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+img:last-child {
+  position: absolute;
+  /* right: 18%;
+  top: 2%; */
+  right: 120px;
+  top: 20px;
+}
