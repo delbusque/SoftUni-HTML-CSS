@@ -71,6 +71,11 @@ body {
 
 /* Read-more card */
 
+.card--read-more:hover {
+  box-shadow: 10px 10px 16px -18px rgba(0, 0, 0, 0.75);
+  transform: translate(2px);
+}
+
 .card .cont.cont--read-more .cont__title {
   margin-bottom: 12px;
 }
@@ -168,4 +173,37 @@ body {
 
 .stretch__cont-desc {
   color: rgba(255, 255, 255, 0.904);
+}
+
+/* Card-box */
+.card-box {
+  width: 150px;
+  height: 150px;
+  background-color: coral;
+  margin: 90px auto;
+  border-radius: 20px;
+  position: relative;
+}
+
+.card-box:hover {
+  box-shadow: 10px 10px 14px -18px rgba(0, 0, 0, 0.75);
+  transform: translate(1px, 1px);
+}
+
+.card-box__cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgba(240, 248, 255, 0.858);
+}
+
+.card-box__icon {
+  margin-bottom: 12px;
+  font-size: x-large;
+}
+
+.card-box__text {
+  font-size: large;
 }
