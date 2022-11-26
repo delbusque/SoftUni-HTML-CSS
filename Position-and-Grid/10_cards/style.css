@@ -64,17 +64,17 @@ body {
 }
 
 /* Read-more card */
-.card .cont.cont--read-more .cont__title {
+.card .cont .cont__title {
   margin-bottom: 12px;
 }
 
-.card .cont.cont--read-more .cont__desc {
+.card .cont .cont__desc {
   color: rgb(123, 120, 126);
 }
 
-.card .cont.cont--read-more .cont__read-more {
+.card .cont .read-more {
   position: absolute;
-  bottom: 22px;
+  bottom: -42px;
   left: 50%;
   transform: translateX(-50%);
   padding: 6px 16px;
@@ -85,15 +85,27 @@ body {
   border-radius: 36px;
   cursor: pointer;
   z-index: 1;
+  opacity: 1;
 
-  /* transition: background-color 3000ms ease-in-out; */
+  transition: background-color 200ms ease-in-out;
 }
 
-.cont.cont--read-more .cont__read-more:hover {
+.card.card--read-more:hover {
+  box-shadow: 10px 10px 21px -18px rgba(0, 0, 0, 0.75);
+  transform: scale(0.9);
+}
+
+.card.card--read-more:hover .cont .read-more {
+  /* box-shadow: 10px 10px 21px -18px rgba(0, 0, 0, 0.75); */
+  bottom: 22px;
+  opacity: 1;
+}
+
+.cont .read-more:hover {
   background-color: rgb(174, 0, 255);
 }
 
-.card .cont.cont--read-more::after {
+.card .cont:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -207,7 +219,7 @@ body {
 
 .layout {
   display: grid;
-  margin: auto;
+  margin: auto 5px;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
