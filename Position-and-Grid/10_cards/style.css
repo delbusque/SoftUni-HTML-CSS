@@ -118,6 +118,8 @@ body {
     rgba(255, 255, 255, 1) 31%,
     rgba(255, 255, 255, 0.10437678489364499) 62%
   );
+
+  transition: all 200ms ease-in-out;
 }
 
 .card.card--read-more:hover .cont:after {
