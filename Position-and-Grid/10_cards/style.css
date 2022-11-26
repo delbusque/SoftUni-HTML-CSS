@@ -11,11 +11,6 @@ body {
   overflow: hidden;
 }
 
-.card:hover {
-  box-shadow: 10px 10px 21px -18px rgba(0, 0, 0, 0.75);
-  transform: translateY(2px);
-}
-
 .card .head {
   position: relative;
   height: 250px;
@@ -69,12 +64,6 @@ body {
 }
 
 /* Read-more card */
-
-.card--read-more:hover {
-  box-shadow: 10px 10px 16px -18px rgba(0, 0, 0, 0.75);
-  transform: translate(2px);
-}
-
 .card .cont.cont--read-more .cont__title {
   margin-bottom: 12px;
 }
@@ -96,6 +85,12 @@ body {
   border-radius: 36px;
   cursor: pointer;
   z-index: 1;
+
+  /* transition: background-color 3000ms ease-in-out; */
+}
+
+.cont.cont--read-more .cont__read-more:hover {
+  background-color: rgb(174, 0, 255);
 }
 
 .card .cont.cont--read-more::after {
@@ -174,17 +169,17 @@ body {
   color: rgba(255, 255, 255, 0.904);
 }
 
+.card--stretch:hover {
+  box-shadow: 10px 10px 21px -18px rgba(0, 0, 0, 0.75);
+  transform: translateY(2px);
+}
+
 /* Card-box */
 .card-box {
   background-color: coral;
   border-radius: 20px;
   height: 300px;
   position: relative;
-}
-
-.card-box:hover {
-  box-shadow: 10px 10px 14px -18px rgba(0, 0, 0, 0.75);
-  transform: translate(1px, 1px);
 }
 
 .card-box__cont {
@@ -205,6 +200,11 @@ body {
   font-size: x-large;
 }
 
+.card-box:hover {
+  box-shadow: 10px 10px 14px -18px rgba(0, 0, 0, 0.75);
+  transform: translate(1px, 1px);
+}
+
 .layout {
   display: grid;
   margin: auto;
@@ -212,7 +212,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas:
-    "card fil read"
+    "read fil card"
     ". places .";
 }
 
