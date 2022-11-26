@@ -6,9 +6,8 @@ body {
 
 .card {
   background-color: white;
-  max-width: 400px;
+  width: 400px;
   border-radius: 10px;
-  margin: 90px auto;
   overflow: hidden;
 }
 
@@ -177,11 +176,9 @@ body {
 
 /* Card-box */
 .card-box {
-  width: 150px;
-  height: 150px;
   background-color: coral;
-  margin: 90px auto;
   border-radius: 20px;
+  height: 300px;
   position: relative;
 }
 
@@ -201,9 +198,45 @@ body {
 
 .card-box__icon {
   margin-bottom: 12px;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .card-box__text {
-  font-size: large;
+  font-size: x-large;
+}
+
+.layout {
+  display: grid;
+  margin: auto;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "card fil read"
+    ". places .";
+}
+
+.layout-item-1 {
+  margin: 10px auto;
+  /* grid-column: 1/2;
+  grid-row: 2/3; */
+  grid-area: places;
+}
+.layout-item-2 {
+  margin: 10px auto;
+  /* grid-column: 2/3;
+  grid-row: 1/2; */
+  grid-area: fil;
+}
+.layout-item-3 {
+  margin: 10px auto;
+  /* grid-column: 1/2;
+  grid-row: 1/2; */
+  grid-area: read;
+}
+.layout-item-4 {
+  margin: 10px auto;
+  /* grid-column: 3/4;
+  grid-row: 1/2; */
+  grid-area: card;
 }
