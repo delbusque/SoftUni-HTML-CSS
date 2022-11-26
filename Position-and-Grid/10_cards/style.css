@@ -2,8 +2,40 @@ body {
   background-color: rgb(237, 231, 231);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-/* Classic card */
 
+header {
+  height: 70px;
+  background-color: rgba(255, 127, 80, 0.991);
+  position: relative;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.header-img {
+  height: 90%;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: inline-block;
+  position: absolute;
+  top: 30%;
+  right: 34px;
+  transform: translateY(-50%);
+}
+.nav-item {
+  display: inline-block;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 25px;
+}
+
+/* Classic card */
 .card {
   background-color: white;
   width: 400px;
@@ -225,13 +257,14 @@ body {
 
 .layout {
   display: grid;
-  margin: auto 5px;
+  margin: 20px 5px;
   gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "read fil card"
-    ". places .";
+    "read fil ."
+    ". card ."
+    "places . .";
 }
 
 .layout-item-1 {
