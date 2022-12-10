@@ -1,0 +1,19 @@
+.cont {
+    background-color: antiquewhite;
+    border: 2px solid rgb(200, 200, 214);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+@media (min-width:700px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .cont {
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+}
