@@ -67,9 +67,9 @@ body {
     font-size: 60px;
     width: 37%;
     color: white;
-    padding: 20px 0 20px 20px;
+    padding: 25px 0 25px 20px;
     position: absolute;
-    top: 43%;
+    top: 43.5%;
     left: 30%;
     transform: translate(-50%, -20%);
     letter-spacing: 0.9px;
@@ -84,5 +84,6 @@ body {
     font-size: 34px;
     box-shadow: none;
     border-radius: 30px;
+    margin-top: 30px;
 
 }
