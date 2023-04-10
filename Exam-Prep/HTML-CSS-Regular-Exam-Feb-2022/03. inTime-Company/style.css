@@ -1,0 +1,88 @@
+@import url('./reset.css');
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+:root {
+    --clr-blue-logo: #21a2b5;
+    --clr-blue: #008cba;
+    --clr-light-blue: #6bbfff;
+    --clr-dark-grey: #454545;
+    --clr-grey: #393f43;
+    --clr-light-grey: #545a5e;
+    --clr-grey-footer: #2f3539;
+    --clr-grey-copyright: #262b2f;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 260px;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    border-bottom: 3px solid white;
+}
+
+.header .logo span {
+    color: var(--clr-blue-logo);
+}
+
+.header .nav {
+    display: flex;
+    gap: 60px;
+    font-size: 18px;
+}
+
+.header .nav .nav-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid white;
+    line-height: 0.5;
+}
+
+.header .nav .active {
+    border-bottom: 3px solid var(--clr-blue-logo);
+}
+
+#hero {
+    position: relative;
+}
+
+#hero .hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+#hero .sub {
+    background-color: rgba(0, 0, 0, 0.577);
+    font-size: 60px;
+    width: 37%;
+    color: white;
+    padding: 20px 0 20px 20px;
+    position: absolute;
+    top: 43%;
+    left: 30%;
+    transform: translate(-50%, -20%);
+    letter-spacing: 0.9px;
+    font-weight: 100;
+    line-height: 1.2;
+}
+
+.hero-button {
+    background-color: var(--clr-blue);
+    padding: 10px 50px;
+    color: white;
+    font-size: 34px;
+    box-shadow: none;
+    border-radius: 30px;
+
+}
