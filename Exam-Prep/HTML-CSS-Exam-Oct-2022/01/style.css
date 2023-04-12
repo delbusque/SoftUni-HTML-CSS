@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('./reset.css');
+
+:root {
+    --clr-green: #86d862;
+    --clr-grey: #e0e0df;
+    --clr-blue: #05a2d3;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    max-width: 1400px;
+    margin: 60px auto;
+    display: flex;
+    border: 1px solid #808080;
+    box-shadow: 0px 14px 15px -4px rgba(0, 0, 0, 0.75);
+    border-radius: 20px;
+}
+
+main img {
+    width: 50%;
+    filter: brightness(60%);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.calc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calc-title {
+    margin-top: 70px;
+}
+
+.calc-units {
+    margin-top: 80px;
+    display: flex;
+    gap: 120px
+}
+
+.calc-units button:nth-of-type(1) {
+    border-radius: 10px;
+    padding: 8px 18px;
+    background-color: var(--clr-green);
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.calc-units button:nth-of-type(2) {
+    border-radius: 10px;
+    padding: 7px 40px;
+    background-color: var(--clr-grey);
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+.calc h4 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.calc-gender {
+    display: flex;
+    gap: 40px;
+}
+
+.calc-gender input,
+.calc-gender select {
+    box-sizing: border-box;
+    width: 190px;
+    font-size: 12px;
+    border-radius: 3px;
+    height: 90%;
+    border: 1px solid gray;
+}
+
+.calc-gender input {
+    vertical-align: top;
+    font-size: 11px;
+    width: 180px;
+}
+
+.input-weight {
+    width: 550px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.calc-height {
+    display: flex;
+    gap: 15px;
+}
+
+.calc-height input {
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 295px;
+}
+
+.calc-button {
+    margin-top: 60px;
+    width: 90%;
+    border-radius: 30px;
+    color: white;
+    background-color: var(--clr-blue);
+    font-weight: 600;
+    padding: 5px 0;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 9px 17px -4px rgba(0, 0, 0, 0.563);
+
+}

@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+main {
+    font-family: 'PT Serif', serif;
+    display: flex;
+    /* gap: 30px; */
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.58);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 50%;
+    padding: 20px;
+    padding-left: 0;
+}
+
+.section {
+    width: 50%;
+    padding: 20px;
+    background-image: url('./image/image1.png');
+    background-size: contain;
+}
+
+.title {
+    border-bottom: 1px dotted darkolivegreen;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+
+.serves {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: lighter;
+    font-variant: normal;
+}
+
+span {
+    color: darkolivegreen;
+    font-weight: 700;
+}
+
+.ingredients {
+    margin-bottom: 50px;
+}
+
+.description {
+    margin-bottom: 50px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
+}
+
+.calories,
+.protein,
+.fiber {
+    text-align: center;
+    padding: 5px;
+}
+
+.calories,
+.protein {
+    border-right: 1px solid black;
+    font-weight: 600;
+}
+
+.fiber {
+    font-weight: 600;
+}
+
+.cell {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black
+}
+
+.calories-r,
+.protein-r,
+.fiber-r {
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid black
+}
+
+.calories-r,
+.protein-r {
+    border-right: 1px solid black;
+}
