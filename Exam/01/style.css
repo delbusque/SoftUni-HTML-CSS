@@ -1,0 +1,78 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --clr-blue: #327dc4;
+  --clr-blue-background: #819daf;
+  --clr-blue-border: #3243c4;
+}
+
+.header {
+  text-align: center;
+  margin: 30px auto;
+  background-color: rgb(255, 255, 255);
+}
+
+.title-1,
+.title-2 {
+  font-size: 44px;
+}
+
+.title-2 {
+  color: var(--clr-blue);
+  margin-left: 3px;
+}
+
+.title-text {
+  font-size: 21px;
+}
+
+.main {
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.box-item {
+  background-color: var(--clr-blue-background);
+  border-radius: 20px;
+}
+
+.image-1,
+.image-2 {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.box-cont {
+  padding: 30px 30px;
+}
+
+.box-title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.box-desc {
+  font-size: 21px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  font-size: 20px;
+  border-radius: 25px;
+  padding: 7px 30px;
+  border: 1px solid var(--clr-blue-border);
+  background-color: var(--clr-blue);
+  color: white;
+  box-shadow: 0px 0px 2px 1px rgba(255, 255, 255, 1);
+}
