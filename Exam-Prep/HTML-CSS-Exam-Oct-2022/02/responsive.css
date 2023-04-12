@@ -1,0 +1,111 @@
+@media screen and (max-width: 600px) {
+
+    .site-main {
+        margin: 0;
+    }
+
+    .entry-header {
+        border-radius: 0;
+    }
+
+    .site-navigation {
+        display: none;
+    }
+
+    .entry-header-description {
+        font-size: 16px;
+        top: 34px;
+        left: 74px
+    }
+
+    .entry-header-title {
+        font-size: 3.8rem;
+    }
+
+    .entry-header-title::first-letter {
+        font-size: 6rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        .entry-header-title {
+            font-size: 3rem;
+        }
+
+        .entry-header-title::first-letter {
+            font-size: 5rem;
+        }
+    }
+
+    @media screen and (max-width: 420px) {
+        .entry-header-title {
+            font-size: 2rem;
+        }
+
+        .entry-header-title::first-letter {
+            font-size: 4rem;
+        }
+    }
+
+    @media screen and (max-width: 380px) {
+        .entry-header-title {
+            font-size: 1rem;
+        }
+
+        .entry-header-title::first-letter {
+            font-size: 2rem;
+        }
+
+        .entry-header-description {
+            font-size: 12px;
+
+        }
+    }
+
+    .entry-header-container button {
+        width: 105px;
+        font-size: 10px;
+    }
+
+    .site-logos-container {
+        min-width: 0;
+    }
+
+    .site-information {
+        display: block;
+        text-align: center;
+    }
+
+    .entry-description {
+        width: 80%;
+        margin-left: 50px;
+    }
+
+    .site-information button {
+        width: 100px;
+    }
+
+
+    .entry-title {
+        font-size: 8px;
+    }
+
+    .site-form {
+        margin-top: 0;
+    }
+
+    .entry-content .site-form .site-form-container p {
+        display: block;
+    }
+
+    .entry-content .site-form .site-form-container p label {
+        display: block;
+    }
+
+    .entry-content .site-form .site-form-container p input {
+        width: 400px;
+    }
+
+    .site-form button {
+        display: inline;
+    }
+}
