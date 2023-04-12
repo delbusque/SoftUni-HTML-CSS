@@ -1,0 +1,105 @@
+@import url("./reset.css");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+:root {
+  --clr-main: #d01919;
+  --clr-light-grey: #efefef;
+  --clr-grey-text: #a6a1b6;
+  --clr-white: #fff;
+}
+
+/* html {
+  box-sizing: border-box;
+  font-family: PT Sans, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+} */
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-main);
+  color: var(--clr-white);
+  padding: 10px 40px;
+  font-size: 20px;
+}
+
+.nav-phone,
+.nav-address,
+.nav-socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-socials {
+  margin-right: 50px;
+  gap: 15px;
+}
+
+.hero {
+  position: relative;
+  color: var(--clr-white);
+  background: url("./image/fitness-main.jpg");
+  width: 1920px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-nav {
+  display: flex;
+  justify-content: end;
+  gap: 91px;
+  align-items: center;
+}
+
+.hero-nav .link {
+  padding-top: 20px;
+  font-size: 19px;
+}
+.hero-nav .link:nth-of-type(6) {
+  padding-right: 92px;
+}
+
+.hero .hero-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-main {
+  font-size: 68px;
+  letter-spacing: 10.2px;
+}
+
+.hero .hero-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
+  padding: 0 13%;
+}
+
+.hero button {
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  color: var(--clr-white);
+  background-color: var(--clr-main);
+  padding: 5px 20px;
+  border-radius: 5px;
+}
