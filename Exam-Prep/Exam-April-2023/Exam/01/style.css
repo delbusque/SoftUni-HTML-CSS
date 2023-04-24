@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+@import url('./reset.css');
+
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+main {
+    background: url('./image/background.jpg');
+    background-size: cover;
+    max-width: 1920px;
+    height: 1080px;
+    background-position: center;
+    position: relative;
+}
+
+.cards-section {
+    position: absolute;
+    top: 250px;
+    left: 380px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.card {
+    padding: 25px 25px 30px 25px;
+    background-color: white;
+    max-width: 400px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.price-cont {
+    display: flex;
+    margin-bottom: 30px;
+    gap: 1px;
+}
+
+.price-cont span {
+    position: relative;
+    align-content: center;
+    top: 32px
+}
+
+.price-cont .price {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.small {
+    font-size: 10px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.options {
+    margin-bottom: 10px;
+}
+
+.options .fa-solid {
+    margin-right: 7px;
+}
+
+.button-basic {
+    margin-top: 50px;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.basic,
+.premium {
+    height: 490px;
+}
+
+.premium button {
+    margin-top: 20px;
+}

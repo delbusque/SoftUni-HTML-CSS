@@ -1,0 +1,282 @@
+@import url('./reset.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --clr-main: #85dcff;
+    --clr-white: #fff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.hero {
+    background-color: var(--clr-main);
+    position: relative;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 5%;
+}
+
+.hero-main {
+    padding: 76px 120px 10px 140px;
+    width: 42%;
+}
+
+.hero-main h2,
+.hero-main p {
+    margin-bottom: 30px;
+}
+
+.hero-main p {
+    font-size: 14px;
+}
+
+.hero-buttons button {
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+
+.hero-buttons {
+    padding-left: 140px;
+    padding-bottom: 90px;
+}
+
+.donate {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    margin-right: 20px;
+    border: 1px solid black;
+
+}
+
+.newsletter {
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+
+.cause h3,
+.cause-title p {
+    text-align: center;
+}
+
+.cause h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.cause-title p {
+    letter-spacing: 1.3px;
+    font-weight: 700;
+
+}
+
+.cause-cards {
+    display: flex;
+    padding: 80px 80px;
+    gap: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.fa-house,
+.fa-helicopter,
+.fa-pencil {
+    font-size: 160px;
+    color: var(--clr-main);
+}
+
+.card h4 {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.card p {
+    text-align: center;
+    font-size: 16px;
+    width: 70%;
+    letter-spacing: 1px;
+}
+
+.work {
+    background-color: var(--clr-main);
+}
+
+.work h1 {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-weight: 800;
+}
+
+.work .cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 40%;
+    margin: 40px auto;
+    gap: 35px;
+}
+
+.first {
+    width: 95%;
+    font-size: 20px;
+}
+
+.first li,
+.second li {
+    margin-bottom: 30px;
+}
+
+.second {
+    font-size: 20px;
+}
+
+.fa-circle {
+    margin-right: 5px;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+.work-button {
+    text-align: center;
+    display: inline-block;
+    align-content: center;
+    color: var(--clr-white);
+    background-color: black;
+    padding: 15px 80px;
+    border-radius: 10px;
+    position: relative;
+    left: 40%;
+    font-size: 16px;
+    margin-bottom: 60px;
+}
+
+.animals h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 30px;
+}
+
+.animals p {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.animals-images {
+    display: flex;
+    margin-top: 20px;
+    gap: 40px;
+    padding: 0 80px;
+    margin-bottom: 60px;
+}
+
+.animals-images img {
+    width: 410px;
+}
+
+.how h1 {
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.big-card {
+    width: 1450px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.big-card h4 {
+    background-color: var(--clr-main);
+    padding: 20px 30px;
+    font-weight: 800;
+}
+
+.big-card p {
+    padding: 20px 30px;
+    font-weight: 600;
+}
+
+.contact {
+    margin-top: 60px;
+    display: flex;
+}
+
+.contact img {
+    width: 50%;
+}
+
+.email {
+    padding: 100px 100px
+}
+
+.email h2 {
+    font-size: 36px;
+    margin-bottom: 60px;
+}
+
+.email p {
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+
+.email input {
+    display: block;
+    height: 40px;
+    border: 1px solid lightgray;
+    width: 380px;
+    margin-bottom: 60px;
+}
+
+.email button {
+    padding: 15px 70px;
+    color: var(--clr-white);
+    background-color: black;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+.socials {
+    display: flex;
+    gap: 20px;
+    font-size: 28px;
+}
+
+.copyright {
+    font-weight: 600;
+}
